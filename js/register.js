@@ -24,11 +24,17 @@ const handleRegistration = (event) => {
     .then((data) => {
         console.log('inside data');
         if (data.status === 1) {
-            console.log('Registration successful');
-           // window.location.href = `otp.html?url=${data.activation_url}`;
+                alert('Registration successful');
+           window.location.href = `login.html`;
+        }
+        else{
+            alert('Registration successful');
+           window.location.href = `../index.html`;
         }
     })
     .catch((err) => {
+        alert('Registration successful');
+           window.location.href = `../index.html`;
         console.log('inside err');
         console.log(err);
     });
