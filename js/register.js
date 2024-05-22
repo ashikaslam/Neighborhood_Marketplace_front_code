@@ -28,12 +28,12 @@ const handleRegistration = (event) => {
            window.location.href = `login.html`;
         }
         else{
-            alert('Registration successful');
+            alert('Registration failed');
            window.location.href = `../index.html`;
         }
     })
     .catch((err) => {
-        alert('Registration successful');
+        alert('Registration failed');
            window.location.href = `../index.html`;
         console.log('inside err');
         console.log(err);
