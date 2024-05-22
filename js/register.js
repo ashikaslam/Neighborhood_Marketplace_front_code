@@ -23,6 +23,7 @@ const handleRegistration = (event) => {
     .then((res) => res.json())
     .then((data) => {
         console.log('inside data');
+        console.log(data);
         if (data.status === 1) {
                 alert('Registration successful');
            window.location.href = `login.html`;
@@ -33,6 +34,7 @@ const handleRegistration = (event) => {
         }
     })
     .catch((err) => {
+        console.log(err);
         alert('Registration failed');
            window.location.href = `../index.html`;
         console.log('inside err');
